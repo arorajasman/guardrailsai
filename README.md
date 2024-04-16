@@ -25,7 +25,7 @@ This will install all the required dependencies specified in the `pyproject.toml
 
 ## OpenAI Configuration Steps
 
-To configure OpenAI's GPT-3.5 model, follow these steps:
+To configure OpenAI's GPT, follow these steps:
 
 1. **Sign Up for OpenAI**: If you haven't already, sign up for an account on the OpenAI platform.
 2. **Get API Key**: Once you have an account, navigate to the API section and generate an API key.
