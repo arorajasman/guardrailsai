@@ -3,14 +3,16 @@ name = "guardrails_ai1"
 version = "0.0.0"
 description = "Examples of AI Guardrails"
 authors = ["John Smith <johnsmith@example.com>"]
+package-mode = false
 
 [tool.poetry.dependencies]
-python = ">=3.8.1,<4.0" # Adjust Python version requirement here
+python = ">=3.8.1,<4.0"                                      # Adjust Python version requirement here
 nltk = "*"
-spacy-transformers = {version = "^1.3.4", optional = true}
+spacy-transformers = { version = "^1.3.4", optional = true }
 guardrails-ai = "^0.4.0"
-transformers = "^4.18.0" 
+transformers = "^4.18.0"
 pydantic = "*"
+python-dotenv = "*"
 
 [tool.poetry.dev-dependencies]
 pyright = "*"
@@ -25,10 +27,8 @@ build-backend = "poetry.core.masonry.api"
 minversion = "6.0"
 addopts = "-rP"
 testpaths = [
-    "tests" # Ensure this is the correct path to your tests
+    "tests", # Ensure this is the correct path to your tests
 ]
 
 [tool.pyright]
 include = ["validator"]
-
-package-mode = false
